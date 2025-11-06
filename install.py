@@ -28,7 +28,9 @@ def main():
         "flask>=2.0.0", 
         "aiosqlite>=0.17.0",
         "asyncio",
-        "pathlib"
+        "pathlib",
+        "waitress>=2.1.2"
+
     ]
     
     pip_cmd = "venv/bin/pip" if os.name != 'nt' else "venv\\Scripts\\pip"
@@ -56,4 +58,5 @@ def main():
     print("\nEl panel web estará disponible en: http://localhost:8081")
 
 if __name__ == "__main__":
+
     main()
